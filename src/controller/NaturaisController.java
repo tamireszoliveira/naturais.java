@@ -11,8 +11,8 @@ O Código deve apresentar, em formato de comentário, como foi definida a relaç
 	}
 	
 	public int naturais(int n) {
-		// parar quando n = 0
-		if (n == 0) {
+		// parar quando n = 0 e retornar 0 caso n seja negativo
+		if (n <= 0) {
 			return 0;
 		} else {
 			return n + naturais(n - 1);
